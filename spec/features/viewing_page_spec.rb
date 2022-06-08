@@ -6,8 +6,8 @@ feature 'Viewing bookmarks on the page' do
 
   scenario 'visiting the bookmarks route' do
     visit('/bookmarks')
+    expect(page).to have_content "http://www.makersacademy.com/"
     expect(page).to have_content "http://www.google.com"
-    expect(page).to have_content "http://www.bbc.co.uk"
-    expect(page).to have_content "http://www.makersacademy.com"
+    expect(page).to have_content "http://www.destroyallsoftware.com"
   end
 end
