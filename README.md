@@ -14,6 +14,10 @@ I want to add the address and title to bookmark manager
 So I can remove a bookmark, 
 I want to delete the bookmark from Bookmark Manager
 
+4) As a user, 
+So I can update my bookmarks, 
+I want to change the title or URL for the bookmark
+
 ## Domain Model
 <img src="domain-model.png" alt="Domain Model Plan" title="Domain Model">
 
