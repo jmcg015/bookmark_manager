@@ -10,6 +10,10 @@ I want to see a list of bookmarks
 So I can save a website,
 I want to add the address and title to bookmark manager
 
+3) As a user, 
+So I can remove a bookmark, 
+I want to delete the bookmark from Bookmark Manager
+
 ## Domain Model
 <img src="domain-model.png" alt="Domain Model Plan" title="Domain Model">
 
@@ -19,9 +23,11 @@ I want to add the address and title to bookmark manager
 2) Create the database using psql command CREATE DATABASE bookmark_manager;
 3) Connect to the database via psql using \c bookmark_manager;
 4) Run the query saved in 01_create_bookmarks_table.sql
+5) Add the title column using the query saving in 02_add_title_to_bookmarks.sql
 
 ### Test Database
 1) Connect to psql in the terminal (enter: psql)
 2) Create the database using ```psql CREATE DATABASE bookmark_manager_test```
 3) Connect to the database using ```\c bookmark_manager_test```
 4) Run the query in 01_create_bookmarks_table.sql to create the bookmarks table
+5) Add the title column using the query saving in 02_add_title_to_bookmarks.sql
