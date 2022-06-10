@@ -1,5 +1,4 @@
 require 'database_connection'
-require 'database_helpers'
 
 describe DatabaseConnection do
   describe '.setup' do
@@ -11,6 +10,14 @@ describe DatabaseConnection do
     it 'should have a persistent connection' do
       connection = DatabaseConnection.setup('bookmark_manager_test')
       expect(DatabaseConnection.connection).to eq connection
+    end
+  end
+
+  describe '.query' do
+    it 'should execute a query via PG' do
+      connection = DatabaseConnection.setup('bookmark_manager_test')
+      expect(connection).to receive(:exec_params).with("SELECT * FROM bookmarks;", [])
+      DatabaseConnection.query("SELECT * FROM bookmarks;")
     end
   end
 end
