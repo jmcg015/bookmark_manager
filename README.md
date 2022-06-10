@@ -18,6 +18,11 @@ I want to delete the bookmark from Bookmark Manager
 So I can update my bookmarks, 
 I want to change the title or URL for the bookmark
 
+5) As a user, 
+So my bookmarks work, 
+I only want to add valid websites to my bookmark manager
+
+
 ## Domain Model
 <img src="domain-model.png" alt="Domain Model Plan" title="Domain Model">
 

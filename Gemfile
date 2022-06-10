@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'sinatra-flash'
 
 group :test do
   gem 'capybara'
@@ -15,5 +16,3 @@ end
 group :development, :test do
   gem "rubocop", "1.20"
 end
-
-# gem "rails"
